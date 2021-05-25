@@ -52,7 +52,7 @@
 								},
 								"sink": {
 									"name": "SoNum",
-									"type": "Int32"
+									"type": "String"
 								}
 							},
 							{
@@ -62,7 +62,7 @@
 								},
 								"sink": {
 									"name": "CreateDate",
-									"type": "Date"
+									"type": "DateTime"
 								}
 							},
 							{
