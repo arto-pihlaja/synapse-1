@@ -1,5 +1,5 @@
 {
-	"name": "SapDataTransformFlow",
+	"name": "SapSoHeadToFile",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
