@@ -1,0 +1,22 @@
+{
+	"name": "SoLineSinkParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArtoAdls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "vbap.parquet",
+				"folderPath": "sapdata",
+				"fileSystem": "artofs"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "TarentoS4",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SapTable",
+		"typeProperties": {
+			"clientId": "100",
+			"language": "EN",
+			"sncMode": false,
+			"userName": "a.pihlaja",
+			"server": "54.84.72.74",
+			"systemNumber": "00",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyOWMyZGI2NC05OTY4LTQ4NzktOTZlMy0yYWVkYTcxNDdiZmQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SynapseIr",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

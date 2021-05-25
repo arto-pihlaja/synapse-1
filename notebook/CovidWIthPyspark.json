@@ -1,0 +1,3251 @@
+{
+	"name": "CovidWIthPyspark",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "ArtoSpark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"71dc7ffd-ec1a-40f3-ade6-2bb8594d5209": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"country_region": "Afghanistan"
+									},
+									{
+										"country_region": "Albania"
+									},
+									{
+										"country_region": "Algeria"
+									},
+									{
+										"country_region": "American Samoa"
+									},
+									{
+										"country_region": "Andorra"
+									},
+									{
+										"country_region": "Angola"
+									},
+									{
+										"country_region": "Anguilla"
+									},
+									{
+										"country_region": "Antarctica"
+									},
+									{
+										"country_region": "Antigua and Barbuda"
+									},
+									{
+										"country_region": "Argentina"
+									},
+									{
+										"country_region": "Armenia"
+									},
+									{
+										"country_region": "Aruba"
+									},
+									{
+										"country_region": "Australia"
+									},
+									{
+										"country_region": "Austria"
+									},
+									{
+										"country_region": "Azerbaijan"
+									},
+									{
+										"country_region": "Bahamas"
+									},
+									{
+										"country_region": "Bahrain"
+									},
+									{
+										"country_region": "Bangladesh"
+									},
+									{
+										"country_region": "Barbados"
+									},
+									{
+										"country_region": "Belarus"
+									},
+									{
+										"country_region": "Belgium"
+									},
+									{
+										"country_region": "Belize"
+									},
+									{
+										"country_region": "Benin"
+									},
+									{
+										"country_region": "Bermuda"
+									},
+									{
+										"country_region": "Bhutan"
+									},
+									{
+										"country_region": "Bolivia"
+									},
+									{
+										"country_region": "Bonaire"
+									},
+									{
+										"country_region": "Bosnia and Herzegovina"
+									},
+									{
+										"country_region": "Botswana"
+									},
+									{
+										"country_region": "Brazil"
+									},
+									{
+										"country_region": "British Virgin Islands"
+									},
+									{
+										"country_region": "Brunei"
+									},
+									{
+										"country_region": "Bulgaria"
+									},
+									{
+										"country_region": "Burkina Faso"
+									},
+									{
+										"country_region": "Burundi"
+									},
+									{
+										"country_region": "Cabo Verde"
+									},
+									{
+										"country_region": "Cambodia"
+									},
+									{
+										"country_region": "Cameroon"
+									},
+									{
+										"country_region": "Canada"
+									},
+									{
+										"country_region": "Cayman Islands"
+									},
+									{
+										"country_region": "Central African Republic"
+									},
+									{
+										"country_region": "Chad"
+									},
+									{
+										"country_region": "Chile"
+									},
+									{
+										"country_region": "China"
+									},
+									{
+										"country_region": "China (mainland)"
+									},
+									{
+										"country_region": "Colombia"
+									},
+									{
+										"country_region": "Comoros"
+									},
+									{
+										"country_region": "Congo"
+									},
+									{
+										"country_region": "Congo (DRC)"
+									},
+									{
+										"country_region": "Costa Rica"
+									},
+									{
+										"country_region": "Croatia"
+									},
+									{
+										"country_region": "Cuba"
+									},
+									{
+										"country_region": "Curaçao"
+									},
+									{
+										"country_region": "Cyprus"
+									},
+									{
+										"country_region": "Czechia"
+									},
+									{
+										"country_region": "Côte d'Ivoire"
+									},
+									{
+										"country_region": "Côte d’Ivoire"
+									},
+									{
+										"country_region": "Denmark"
+									},
+									{
+										"country_region": "Djibouti"
+									},
+									{
+										"country_region": "Dominica"
+									},
+									{
+										"country_region": "Dominican Republic"
+									},
+									{
+										"country_region": "Ecuador"
+									},
+									{
+										"country_region": "Egypt"
+									},
+									{
+										"country_region": "El Salvador"
+									},
+									{
+										"country_region": "Equatorial Guinea"
+									},
+									{
+										"country_region": "Eritrea"
+									},
+									{
+										"country_region": "Estonia"
+									},
+									{
+										"country_region": "Eswatini"
+									},
+									{
+										"country_region": "Ethiopia"
+									},
+									{
+										"country_region": "Falkland Islands"
+									},
+									{
+										"country_region": "Faroe Islands"
+									},
+									{
+										"country_region": "Federated States of Micronesia"
+									},
+									{
+										"country_region": "Fiji"
+									},
+									{
+										"country_region": "Finland"
+									},
+									{
+										"country_region": "France"
+									},
+									{
+										"country_region": "French Guiana"
+									},
+									{
+										"country_region": "French Polynesia"
+									},
+									{
+										"country_region": "French-Guadeloupe"
+									},
+									{
+										"country_region": "French-Martinique"
+									},
+									{
+										"country_region": "Gabon"
+									},
+									{
+										"country_region": "Gaza Strip"
+									},
+									{
+										"country_region": "Georgia"
+									},
+									{
+										"country_region": "Germany"
+									},
+									{
+										"country_region": "Ghana"
+									},
+									{
+										"country_region": "Gibraltar"
+									},
+									{
+										"country_region": "Greece"
+									},
+									{
+										"country_region": "Greenland"
+									},
+									{
+										"country_region": "Grenada"
+									},
+									{
+										"country_region": "Guadeloupe"
+									},
+									{
+										"country_region": "Guam"
+									},
+									{
+										"country_region": "Guatemala"
+									},
+									{
+										"country_region": "Guernsey"
+									},
+									{
+										"country_region": "Guinea"
+									},
+									{
+										"country_region": "Guinea-Bissau"
+									},
+									{
+										"country_region": "Guyana"
+									},
+									{
+										"country_region": "Haiti"
+									},
+									{
+										"country_region": "Honduras"
+									},
+									{
+										"country_region": "Hong Kong SAR"
+									},
+									{
+										"country_region": "Hungary"
+									},
+									{
+										"country_region": "Iceland"
+									},
+									{
+										"country_region": "India"
+									},
+									{
+										"country_region": "Indonesia"
+									},
+									{
+										"country_region": "Iran"
+									},
+									{
+										"country_region": "Iraq"
+									},
+									{
+										"country_region": "Ireland"
+									},
+									{
+										"country_region": "Isle of Man"
+									},
+									{
+										"country_region": "Israel"
+									},
+									{
+										"country_region": "Italy"
+									},
+									{
+										"country_region": "Jamaica"
+									},
+									{
+										"country_region": "Japan"
+									},
+									{
+										"country_region": "Jersey"
+									},
+									{
+										"country_region": "Jordan"
+									},
+									{
+										"country_region": "Kazakhstan"
+									},
+									{
+										"country_region": "Kenya"
+									},
+									{
+										"country_region": "Kosovo"
+									},
+									{
+										"country_region": "Kuwait"
+									},
+									{
+										"country_region": "Kyrgyzstan"
+									},
+									{
+										"country_region": "Laos"
+									},
+									{
+										"country_region": "Latvia"
+									},
+									{
+										"country_region": "Lebanon"
+									},
+									{
+										"country_region": "Lesotho"
+									},
+									{
+										"country_region": "Liberia"
+									},
+									{
+										"country_region": "Libya"
+									},
+									{
+										"country_region": "Liechtenstein"
+									},
+									{
+										"country_region": "Lithuania"
+									},
+									{
+										"country_region": "Luxembourg"
+									},
+									{
+										"country_region": "Macao SAR"
+									},
+									{
+										"country_region": "Madagascar"
+									},
+									{
+										"country_region": "Malawi"
+									},
+									{
+										"country_region": "Malaysia"
+									},
+									{
+										"country_region": "Maldives"
+									},
+									{
+										"country_region": "Mali"
+									},
+									{
+										"country_region": "Malta"
+									},
+									{
+										"country_region": "Marshall Islands"
+									},
+									{
+										"country_region": "Martinique"
+									},
+									{
+										"country_region": "Mauritania"
+									},
+									{
+										"country_region": "Mauritius"
+									},
+									{
+										"country_region": "Mayotte"
+									},
+									{
+										"country_region": "Mexico"
+									},
+									{
+										"country_region": "Moldova"
+									},
+									{
+										"country_region": "Monaco"
+									},
+									{
+										"country_region": "Mongolia"
+									},
+									{
+										"country_region": "Montenegro"
+									},
+									{
+										"country_region": "Montserrat"
+									},
+									{
+										"country_region": "Morocco"
+									},
+									{
+										"country_region": "Mozambique"
+									},
+									{
+										"country_region": "Myanmar"
+									},
+									{
+										"country_region": "Namibia"
+									},
+									{
+										"country_region": "Nepal"
+									},
+									{
+										"country_region": "Netherlands"
+									},
+									{
+										"country_region": "New Caledonia"
+									},
+									{
+										"country_region": "New Zealand"
+									},
+									{
+										"country_region": "Nicaragua"
+									},
+									{
+										"country_region": "Niger"
+									},
+									{
+										"country_region": "Nigeria"
+									},
+									{
+										"country_region": "North Macedonia"
+									},
+									{
+										"country_region": "Northern Mariana Islands"
+									},
+									{
+										"country_region": "Norway"
+									},
+									{
+										"country_region": "Oman"
+									},
+									{
+										"country_region": "Pakistan"
+									},
+									{
+										"country_region": "Panama"
+									},
+									{
+										"country_region": "Papua New Guinea"
+									},
+									{
+										"country_region": "Paraguay"
+									},
+									{
+										"country_region": "Peru"
+									},
+									{
+										"country_region": "Philippines"
+									},
+									{
+										"country_region": "Poland"
+									},
+									{
+										"country_region": "Portugal"
+									},
+									{
+										"country_region": "Puerto Rico"
+									},
+									{
+										"country_region": "Qatar"
+									},
+									{
+										"country_region": "Republic of the Congo"
+									},
+									{
+										"country_region": "Romania"
+									},
+									{
+										"country_region": "Russia"
+									},
+									{
+										"country_region": "Rwanda"
+									},
+									{
+										"country_region": "Réunion"
+									},
+									{
+										"country_region": "Saba"
+									},
+									{
+										"country_region": "Saint Barthélemy"
+									},
+									{
+										"country_region": "Saint Helena, Ascension and Tristan da Cunha"
+									},
+									{
+										"country_region": "Saint Lucia"
+									},
+									{
+										"country_region": "Saint Martin"
+									},
+									{
+										"country_region": "Saint Pierre and Miquelon"
+									},
+									{
+										"country_region": "Saint Vincent and the Grenadines"
+									},
+									{
+										"country_region": "Samoa"
+									},
+									{
+										"country_region": "San Marino"
+									},
+									{
+										"country_region": "Saudi Arabia"
+									},
+									{
+										"country_region": "Senegal"
+									},
+									{
+										"country_region": "Serbia"
+									},
+									{
+										"country_region": "Seychelles"
+									},
+									{
+										"country_region": "Sierra Leone"
+									},
+									{
+										"country_region": "Singapore"
+									},
+									{
+										"country_region": "Slovakia"
+									},
+									{
+										"country_region": "Slovenia"
+									},
+									{
+										"country_region": "Solomon Islands"
+									},
+									{
+										"country_region": "Somalia"
+									},
+									{
+										"country_region": "South Africa"
+									},
+									{
+										"country_region": "South Korea"
+									},
+									{
+										"country_region": "South Sudan"
+									},
+									{
+										"country_region": "Spain"
+									},
+									{
+										"country_region": "Sri Lanka"
+									},
+									{
+										"country_region": "St Kitts and Nevis"
+									},
+									{
+										"country_region": "St Marten"
+									},
+									{
+										"country_region": "St Vincent and the Grenadines"
+									},
+									{
+										"country_region": "Sudan"
+									},
+									{
+										"country_region": "Suriname"
+									},
+									{
+										"country_region": "Sweden"
+									},
+									{
+										"country_region": "Switzerland"
+									},
+									{
+										"country_region": "Syria"
+									},
+									{
+										"country_region": "São Tomé and Príncipe"
+									},
+									{
+										"country_region": "Taiwan"
+									},
+									{
+										"country_region": "Tajikistan"
+									},
+									{
+										"country_region": "Tanzania"
+									},
+									{
+										"country_region": "Thailand"
+									},
+									{
+										"country_region": "The Gambia"
+									},
+									{
+										"country_region": "Timor-Leste"
+									},
+									{
+										"country_region": "Togo"
+									},
+									{
+										"country_region": "Trinidad and Tobago"
+									},
+									{
+										"country_region": "Tunisia"
+									},
+									{
+										"country_region": "Turkey"
+									},
+									{
+										"country_region": "Turks and Caicos Islands"
+									},
+									{
+										"country_region": "U.S. Virgin Islands"
+									},
+									{
+										"country_region": "US Virgin Islands"
+									},
+									{
+										"country_region": "Uganda"
+									},
+									{
+										"country_region": "Ukraine"
+									},
+									{
+										"country_region": "United Arab Emirates"
+									},
+									{
+										"country_region": "United Kingdom"
+									},
+									{
+										"country_region": "United States"
+									},
+									{
+										"country_region": "Uruguay"
+									},
+									{
+										"country_region": "Uzbekistan"
+									},
+									{
+										"country_region": "Vanuatu"
+									},
+									{
+										"country_region": "Vatican City"
+									},
+									{
+										"country_region": "Venezuela"
+									},
+									{
+										"country_region": "Vietnam"
+									},
+									{
+										"country_region": "Wallis and Futuna"
+									},
+									{
+										"country_region": "West Bank"
+									},
+									{
+										"country_region": "Worldwide"
+									},
+									{
+										"country_region": "Yemen"
+									},
+									{
+										"country_region": "Zambia"
+									},
+									{
+										"country_region": "Zimbabwe"
+									}
+								],
+								"schema": {
+									"country_region": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"country_region"
+									],
+									"seriesFieldKeys": [
+										"country_region"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"2dce8e68-406e-4fc1-8d64-2eaaa8784998": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"country_region": "United Kingdom",
+										"dt": 0.3389
+									},
+									{
+										"country_region": "Hungary",
+										"dt": 0.3019
+									},
+									{
+										"country_region": "Yemen",
+										"dt": 0.2486
+									},
+									{
+										"country_region": "St Marten",
+										"dt": 0.1439
+									},
+									{
+										"country_region": "El Salvador",
+										"dt": 0.1044
+									},
+									{
+										"country_region": "French-Guadeloupe",
+										"dt": 0.1004
+									},
+									{
+										"country_region": "Mexico",
+										"dt": 0.0933
+									},
+									{
+										"country_region": "Iran",
+										"dt": 0.0808
+									}
+								],
+								"schema": {
+									"country_region": "string",
+									"dt": "double"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"country_region"
+									],
+									"seriesFieldKeys": [
+										"dt"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"1e07c848-dfbc-4489-b0e4-77fecadd6c81": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"load_time": "2021-05-09"
+									},
+									{
+										"load_time": "2021-05-09"
+									},
+									{
+										"load_time": "2021-05-09"
+									},
+									{
+										"load_time": "2021-05-09"
+									}
+								],
+								"schema": {
+									"load_time": "date"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"load_time"
+									],
+									"seriesFieldKeys": [
+										"load_time"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"37dd44b1-7180-4a9a-8088-46f3a5bf3494": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"deaths": 0,
+										"confirmed": 262,
+										"country_region": "Worldwide",
+										"id": "338995",
+										"updated": "2020-01-21",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 313,
+										"confirmed_change": 51,
+										"country_region": "Worldwide",
+										"id": "338996",
+										"updated": "2020-01-22",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 578,
+										"confirmed_change": 265,
+										"country_region": "Worldwide",
+										"id": "338997",
+										"updated": "2020-01-23",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 841,
+										"confirmed_change": 263,
+										"country_region": "Worldwide",
+										"id": "338998",
+										"updated": "2020-01-24",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 1320,
+										"confirmed_change": 479,
+										"country_region": "Worldwide",
+										"id": "338999",
+										"updated": "2020-01-25",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2014,
+										"confirmed_change": 694,
+										"country_region": "Worldwide",
+										"id": "339000",
+										"updated": "2020-01-26",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 2798,
+										"confirmed_change": 784,
+										"country_region": "Worldwide",
+										"id": "339001",
+										"updated": "2020-01-27",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 4593,
+										"confirmed_change": 1795,
+										"country_region": "Worldwide",
+										"id": "339002",
+										"updated": "2020-01-28",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 6065,
+										"confirmed_change": 1472,
+										"country_region": "Worldwide",
+										"id": "339003",
+										"updated": "2020-01-29",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									},
+									{
+										"deaths_change": 0,
+										"deaths": 0,
+										"confirmed": 7818,
+										"confirmed_change": 1753,
+										"country_region": "Worldwide",
+										"id": "339004",
+										"updated": "2020-01-30",
+										"load_time": "2021-05-10T00:07:10.959Z"
+									}
+								],
+								"schema": {
+									"id": "int",
+									"updated": "date",
+									"confirmed": "int",
+									"confirmed_change": "int",
+									"deaths": "int",
+									"deaths_change": "smallint",
+									"recovered": "int",
+									"recovered_change": "int",
+									"latitude": "double",
+									"longitude": "double",
+									"iso2": "string",
+									"iso3": "string",
+									"country_region": "string",
+									"admin_region_1": "string",
+									"iso_subdivision": "string",
+									"admin_region_2": "string",
+									"load_time": "int"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"updated"
+									],
+									"seriesFieldKeys": [
+										"id"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"273495ac-875a-4ddf-87c4-0b5e95aa6e2b": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"updated": "2020-01-29"
+									},
+									{
+										"updated": "2020-01-30",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-01-31",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-01",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-02",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-03",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-04",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-05",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-06",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-07",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-08",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-09",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-10",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-11",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-12",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-13",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-14",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-15",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-16",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-17",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-18",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-19",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-20",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-21",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-22",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-23",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-24",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-25",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-02-26",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-02-27",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-02-28",
+										"confirmed_change": 2
+									},
+									{
+										"updated": "2020-02-29",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-03-01",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-03-02",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-03-03",
+										"confirmed_change": 4
+									},
+									{
+										"updated": "2020-03-04",
+										"confirmed_change": 5
+									},
+									{
+										"updated": "2020-03-05",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-03-06",
+										"confirmed_change": 5
+									},
+									{
+										"updated": "2020-03-07",
+										"confirmed_change": 7
+									},
+									{
+										"updated": "2020-03-08",
+										"confirmed_change": 9
+									},
+									{
+										"updated": "2020-03-09",
+										"confirmed_change": 16
+									},
+									{
+										"updated": "2020-03-10",
+										"confirmed_change": 54
+									},
+									{
+										"updated": "2020-03-11",
+										"confirmed_change": 73
+									},
+									{
+										"updated": "2020-03-12",
+										"confirmed_change": 57
+									},
+									{
+										"updated": "2020-03-13",
+										"confirmed_change": 28
+									},
+									{
+										"updated": "2020-03-14",
+										"confirmed_change": 26
+									},
+									{
+										"updated": "2020-03-15",
+										"confirmed_change": 47
+									},
+									{
+										"updated": "2020-03-16",
+										"confirmed_change": 45
+									},
+									{
+										"updated": "2020-03-17",
+										"confirmed_change": 41
+									},
+									{
+										"updated": "2020-03-18",
+										"confirmed_change": 86
+									},
+									{
+										"updated": "2020-03-19",
+										"confirmed_change": 92
+									},
+									{
+										"updated": "2020-03-20",
+										"confirmed_change": 82
+									},
+									{
+										"updated": "2020-03-21",
+										"confirmed_change": 82
+									},
+									{
+										"updated": "2020-03-22",
+										"confirmed_change": 78
+									},
+									{
+										"updated": "2020-03-23",
+										"confirmed_change": 82
+									},
+									{
+										"updated": "2020-03-24",
+										"confirmed_change": 100
+									},
+									{
+										"updated": "2020-03-25",
+										"confirmed_change": 98
+									},
+									{
+										"updated": "2020-03-26",
+										"confirmed_change": 103
+									},
+									{
+										"updated": "2020-03-27",
+										"confirmed_change": 89
+									},
+									{
+										"updated": "2020-03-28",
+										"confirmed_change": 75
+									},
+									{
+										"updated": "2020-03-29",
+										"confirmed_change": 58
+									},
+									{
+										"updated": "2020-03-30",
+										"confirmed_change": 116
+									},
+									{
+										"updated": "2020-03-31",
+										"confirmed_change": 117
+									},
+									{
+										"updated": "2020-04-01",
+										"confirmed_change": 145
+									},
+									{
+										"updated": "2020-04-02",
+										"confirmed_change": 154
+									},
+									{
+										"updated": "2020-04-03",
+										"confirmed_change": 198
+									},
+									{
+										"updated": "2020-04-04",
+										"confirmed_change": 74
+									},
+									{
+										"updated": "2020-04-05",
+										"confirmed_change": 106
+									},
+									{
+										"updated": "2020-04-06",
+										"confirmed_change": 207
+									},
+									{
+										"updated": "2020-04-07",
+										"confirmed_change": 197
+									},
+									{
+										"updated": "2020-04-08",
+										"confirmed_change": 127
+									},
+									{
+										"updated": "2020-04-09",
+										"confirmed_change": 146
+									},
+									{
+										"updated": "2020-04-10",
+										"confirmed_change": 64
+									},
+									{
+										"updated": "2020-04-11",
+										"confirmed_change": 75
+									},
+									{
+										"updated": "2020-04-12",
+										"confirmed_change": 78
+									},
+									{
+										"updated": "2020-04-13",
+										"confirmed_change": 115
+									},
+									{
+										"updated": "2020-04-14",
+										"confirmed_change": 170
+									},
+									{
+										"updated": "2020-04-15",
+										"confirmed_change": 126
+									},
+									{
+										"updated": "2020-04-16",
+										"confirmed_change": 120
+									},
+									{
+										"updated": "2020-04-17",
+										"confirmed_change": 123
+									},
+									{
+										"updated": "2020-04-18",
+										"confirmed_change": 55
+									},
+									{
+										"updated": "2020-04-19",
+										"confirmed_change": 63
+									},
+									{
+										"updated": "2020-04-20",
+										"confirmed_change": 146
+									},
+									{
+										"updated": "2020-04-21",
+										"confirmed_change": 112
+									},
+									{
+										"updated": "2020-04-22",
+										"confirmed_change": 122
+									},
+									{
+										"updated": "2020-04-23",
+										"confirmed_change": 107
+									},
+									{
+										"updated": "2020-04-24",
+										"confirmed_change": 96
+									},
+									{
+										"updated": "2020-04-25",
+										"confirmed_change": 77
+									},
+									{
+										"updated": "2020-04-26",
+										"confirmed_change": 73
+									},
+									{
+										"updated": "2020-04-27",
+										"confirmed_change": 128
+									},
+									{
+										"updated": "2020-04-28",
+										"confirmed_change": 105
+									},
+									{
+										"updated": "2020-04-29",
+										"confirmed_change": 94
+									},
+									{
+										"updated": "2020-04-30",
+										"confirmed_change": 75
+									},
+									{
+										"updated": "2020-05-01",
+										"confirmed_change": 44
+									},
+									{
+										"updated": "2020-05-02",
+										"confirmed_change": 48
+									},
+									{
+										"updated": "2020-05-03",
+										"confirmed_change": 151
+									},
+									{
+										"updated": "2020-05-04",
+										"confirmed_change": 127
+									},
+									{
+										"updated": "2020-05-05",
+										"confirmed_change": 119
+									},
+									{
+										"updated": "2020-05-06",
+										"confirmed_change": 99
+									},
+									{
+										"updated": "2020-05-07",
+										"confirmed_change": 112
+									},
+									{
+										"updated": "2020-05-08",
+										"confirmed_change": 83
+									},
+									{
+										"updated": "2020-05-09",
+										"confirmed_change": 42
+									},
+									{
+										"updated": "2020-05-10",
+										"confirmed_change": 19
+									},
+									{
+										"updated": "2020-05-11",
+										"confirmed_change": 42
+									},
+									{
+										"updated": "2020-05-12",
+										"confirmed_change": 7
+									},
+									{
+										"updated": "2020-05-13",
+										"confirmed_change": 91
+									},
+									{
+										"updated": "2020-05-14",
+										"confirmed_change": 172
+									},
+									{
+										"updated": "2020-05-15",
+										"confirmed_change": 57
+									},
+									{
+										"updated": "2020-05-16",
+										"confirmed_change": 23
+									},
+									{
+										"updated": "2020-05-17",
+										"confirmed_change": 23
+									},
+									{
+										"updated": "2020-05-18",
+										"confirmed_change": 47
+									},
+									{
+										"updated": "2020-05-19",
+										"confirmed_change": 45
+									},
+									{
+										"updated": "2020-05-20",
+										"confirmed_change": 43
+									},
+									{
+										"updated": "2020-05-21",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-05-22",
+										"confirmed_change": 33
+									},
+									{
+										"updated": "2020-05-23",
+										"confirmed_change": 16
+									},
+									{
+										"updated": "2020-05-24",
+										"confirmed_change": 31
+									},
+									{
+										"updated": "2020-05-25",
+										"confirmed_change": 54
+									},
+									{
+										"updated": "2020-05-26",
+										"confirmed_change": 40
+									},
+									{
+										"updated": "2020-05-27",
+										"confirmed_change": 16
+									},
+									{
+										"updated": "2020-05-28",
+										"confirmed_change": 43
+									},
+									{
+										"updated": "2020-05-29",
+										"confirmed_change": 44
+									},
+									{
+										"updated": "2020-05-30",
+										"confirmed_change": 13
+									},
+									{
+										"updated": "2020-05-31",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-06-01",
+										"confirmed_change": 18
+									},
+									{
+										"updated": "2020-06-02",
+										"confirmed_change": 23
+									},
+									{
+										"updated": "2020-06-03",
+										"confirmed_change": 29
+									},
+									{
+										"updated": "2020-06-04",
+										"confirmed_change": 19
+									},
+									{
+										"updated": "2020-06-05",
+										"confirmed_change": 19
+									},
+									{
+										"updated": "2020-06-06",
+										"confirmed_change": 18
+									},
+									{
+										"updated": "2020-06-07",
+										"confirmed_change": 20
+									},
+									{
+										"updated": "2020-06-08",
+										"confirmed_change": 18
+									},
+									{
+										"updated": "2020-06-09",
+										"confirmed_change": 22
+									},
+									{
+										"updated": "2020-06-10",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-06-11",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-06-12",
+										"confirmed_change": 15
+									},
+									{
+										"updated": "2020-06-13",
+										"confirmed_change": 4
+									},
+									{
+										"updated": "2020-06-14",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-06-15",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-06-16",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-06-17",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-06-18",
+										"confirmed_change": 9
+									},
+									{
+										"updated": "2020-06-19",
+										"confirmed_change": 2
+									},
+									{
+										"updated": "2020-06-20",
+										"confirmed_change": 13
+									},
+									{
+										"updated": "2020-06-21",
+										"confirmed_change": 7
+									},
+									{
+										"updated": "2020-06-22",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-06-23",
+										"confirmed_change": 20
+									},
+									{
+										"updated": "2020-06-24",
+										"confirmed_change": 14
+									},
+									{
+										"updated": "2020-06-25",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-06-26",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-06-27",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-06-28",
+										"confirmed_change": 14
+									},
+									{
+										"updated": "2020-06-29",
+										"confirmed_change": 9
+									},
+									{
+										"updated": "2020-06-30",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-01",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-07-02",
+										"confirmed_change": 7
+									},
+									{
+										"updated": "2020-07-03",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-04",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-05",
+										"confirmed_change": 14
+									},
+									{
+										"updated": "2020-07-06",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-07-07",
+										"confirmed_change": 10
+									},
+									{
+										"updated": "2020-07-08",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-07-09",
+										"confirmed_change": 0
+									},
+									{
+										"updated": "2020-07-10",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-11",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-12",
+										"confirmed_change": 1
+									},
+									{
+										"updated": "2020-07-13",
+										"confirmed_change": 5
+									},
+									{
+										"updated": "2020-07-14",
+										"confirmed_change": 31
+									},
+									{
+										"updated": "2020-07-15",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-07-16",
+										"confirmed_change": 6
+									},
+									{
+										"updated": "2020-07-17",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-07-18",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-07-19",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-07-20",
+										"confirmed_change": 8
+									},
+									{
+										"updated": "2020-07-21",
+										"confirmed_change": 10
+									},
+									{
+										"updated": "2020-07-22",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-07-23",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-07-24",
+										"confirmed_change": 3
+									},
+									{
+										"updated": "2020-07-25",
+										"confirmed_change": 7
+									},
+									{
+										"updated": "2020-07-26",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-07-27",
+										"confirmed_change": 6
+									},
+									{
+										"updated": "2020-07-28",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-07-29",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-07-30",
+										"confirmed_change": 18
+									},
+									{
+										"updated": "2020-07-31",
+										"confirmed_change": 14
+									},
+									{
+										"updated": "2020-08-01",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-08-02",
+										"confirmed_change": 36
+									},
+									{
+										"updated": "2020-08-03",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-08-04",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-08-05",
+										"confirmed_change": 20
+									},
+									{
+										"updated": "2020-08-06",
+										"confirmed_change": 23
+									},
+									{
+										"updated": "2020-08-07",
+										"confirmed_change": 10
+									},
+									{
+										"updated": "2020-08-08",
+										"confirmed_change": 34
+									},
+									{
+										"updated": "2020-08-09",
+										"confirmed_change": 14
+									},
+									{
+										"updated": "2020-08-10",
+										"confirmed_change": 21
+									},
+									{
+										"updated": "2020-08-11",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-08-12",
+										"confirmed_change": 22
+									},
+									{
+										"updated": "2020-08-13",
+										"confirmed_change": 25
+									},
+									{
+										"updated": "2020-08-14",
+										"confirmed_change": 17
+									},
+									{
+										"updated": "2020-08-15",
+										"confirmed_change": 45
+									},
+									{
+										"updated": "2020-08-16",
+										"confirmed_change": 22
+									},
+									{
+										"updated": "2020-08-17",
+										"confirmed_change": 35
+									},
+									{
+										"updated": "2020-08-18",
+										"confirmed_change": 36
+									},
+									{
+										"updated": "2020-08-19",
+										"confirmed_change": 26
+									},
+									{
+										"updated": "2020-08-20",
+										"confirmed_change": 34
+									},
+									{
+										"updated": "2020-08-21",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-08-22",
+										"confirmed_change": 12
+									},
+									{
+										"updated": "2020-08-23",
+										"confirmed_change": 15
+									},
+									{
+										"updated": "2020-08-24",
+										"confirmed_change": 9
+									},
+									{
+										"updated": "2020-08-25",
+										"confirmed_change": 27
+									},
+									{
+										"updated": "2020-08-26",
+										"confirmed_change": 28
+									},
+									{
+										"updated": "2020-08-27",
+										"confirmed_change": 42
+									},
+									{
+										"updated": "2020-08-28",
+										"confirmed_change": 11
+									},
+									{
+										"updated": "2020-08-29",
+										"confirmed_change": 21
+									},
+									{
+										"updated": "2020-08-30",
+										"confirmed_change": 38
+									},
+									{
+										"updated": "2020-08-31",
+										"confirmed_change": 25
+									},
+									{
+										"updated": "2020-09-01",
+										"confirmed_change": 24
+									},
+									{
+										"updated": "2020-09-02",
+										"confirmed_change": 42
+									},
+									{
+										"updated": "2020-09-03",
+										"confirmed_change": 39
+									},
+									{
+										"updated": "2020-09-04",
+										"confirmed_change": 35
+									},
+									{
+										"updated": "2020-09-05",
+										"confirmed_change": 36
+									},
+									{
+										"updated": "2020-09-06",
+										"confirmed_change": 39
+									},
+									{
+										"updated": "2020-09-07",
+										"confirmed_change": 53
+									},
+									{
+										"updated": "2020-09-08",
+										"confirmed_change": 58
+									},
+									{
+										"updated": "2020-09-09",
+										"confirmed_change": 52
+									},
+									{
+										"updated": "2020-09-10",
+										"confirmed_change": 55
+									},
+									{
+										"updated": "2020-09-11",
+										"confirmed_change": 40
+									},
+									{
+										"updated": "2020-09-12",
+										"confirmed_change": 41
+									},
+									{
+										"updated": "2020-09-13",
+										"confirmed_change": 55
+									},
+									{
+										"updated": "2020-09-14",
+										"confirmed_change": 47
+									},
+									{
+										"updated": "2020-09-15",
+										"confirmed_change": 87
+									},
+									{
+										"updated": "2020-09-16",
+										"confirmed_change": 86
+									},
+									{
+										"updated": "2020-09-17",
+										"confirmed_change": 79
+									},
+									{
+										"updated": "2020-09-18",
+										"confirmed_change": 58
+									},
+									{
+										"updated": "2020-09-19",
+										"confirmed_change": 73
+									},
+									{
+										"updated": "2020-09-20",
+										"confirmed_change": 119
+									},
+									{
+										"updated": "2020-09-21",
+										"confirmed_change": 103
+									},
+									{
+										"updated": "2020-09-22",
+										"confirmed_change": 114
+									},
+									{
+										"updated": "2020-09-23",
+										"confirmed_change": 96
+									},
+									{
+										"updated": "2020-09-24",
+										"confirmed_change": 124
+									},
+									{
+										"updated": "2020-09-25",
+										"confirmed_change": 82
+									},
+									{
+										"updated": "2020-09-26",
+										"confirmed_change": 76
+									},
+									{
+										"updated": "2020-09-27",
+										"confirmed_change": 119
+									},
+									{
+										"updated": "2020-09-28",
+										"confirmed_change": 132
+									},
+									{
+										"updated": "2020-09-29",
+										"confirmed_change": 166
+									},
+									{
+										"updated": "2020-09-30",
+										"confirmed_change": 189
+									},
+									{
+										"updated": "2020-10-01",
+										"confirmed_change": 193
+									},
+									{
+										"updated": "2020-10-02",
+										"confirmed_change": 173
+									},
+									{
+										"updated": "2020-10-03",
+										"confirmed_change": 147
+									},
+									{
+										"updated": "2020-10-04",
+										"confirmed_change": 288
+									},
+									{
+										"updated": "2020-10-05",
+										"confirmed_change": 261
+									},
+									{
+										"updated": "2020-10-06",
+										"confirmed_change": 343
+									},
+									{
+										"updated": "2020-10-07",
+										"confirmed_change": 256
+									},
+									{
+										"updated": "2020-10-08",
+										"confirmed_change": 220
+									},
+									{
+										"updated": "2020-10-09",
+										"confirmed_change": 110
+									},
+									{
+										"updated": "2020-10-10",
+										"confirmed_change": 144
+									},
+									{
+										"updated": "2020-10-11",
+										"confirmed_change": 205
+									},
+									{
+										"updated": "2020-10-12",
+										"confirmed_change": 151
+									},
+									{
+										"updated": "2020-10-13",
+										"confirmed_change": 268
+									},
+									{
+										"updated": "2020-10-14",
+										"confirmed_change": 201
+									},
+									{
+										"updated": "2020-10-15",
+										"confirmed_change": 197
+									},
+									{
+										"updated": "2020-10-16",
+										"confirmed_change": 102
+									},
+									{
+										"updated": "2020-10-17",
+										"confirmed_change": 134
+									},
+									{
+										"updated": "2020-10-18",
+										"confirmed_change": 238
+									},
+									{
+										"updated": "2020-10-19",
+										"confirmed_change": 165
+									},
+									{
+										"updated": "2020-10-20",
+										"confirmed_change": 172
+									},
+									{
+										"updated": "2020-10-21",
+										"confirmed_change": 222
+									},
+									{
+										"updated": "2020-10-22",
+										"confirmed_change": 200
+									},
+									{
+										"updated": "2020-10-23",
+										"confirmed_change": 115
+									},
+									{
+										"updated": "2020-10-24",
+										"confirmed_change": 125
+									},
+									{
+										"updated": "2020-10-25",
+										"confirmed_change": 254
+									},
+									{
+										"updated": "2020-10-26",
+										"confirmed_change": 226
+									},
+									{
+										"updated": "2020-10-27",
+										"confirmed_change": 244
+									},
+									{
+										"updated": "2020-10-28",
+										"confirmed_change": 240
+									},
+									{
+										"updated": "2020-10-29",
+										"confirmed_change": 219
+									},
+									{
+										"updated": "2020-10-30",
+										"confirmed_change": 123
+									},
+									{
+										"updated": "2020-10-31",
+										"confirmed_change": 148
+									},
+									{
+										"updated": "2020-11-01",
+										"confirmed_change": 283
+									},
+									{
+										"updated": "2020-11-02",
+										"confirmed_change": 242
+									},
+									{
+										"updated": "2020-11-03",
+										"confirmed_change": 208
+									},
+									{
+										"updated": "2020-11-04",
+										"confirmed_change": 224
+									},
+									{
+										"updated": "2020-11-05",
+										"confirmed_change": 196
+									},
+									{
+										"updated": "2020-11-06",
+										"confirmed_change": 133
+									},
+									{
+										"updated": "2020-11-07",
+										"confirmed_change": 137
+									},
+									{
+										"updated": "2020-11-08",
+										"confirmed_change": 279
+									},
+									{
+										"updated": "2020-11-09",
+										"confirmed_change": 209
+									},
+									{
+										"updated": "2020-11-10",
+										"confirmed_change": 283
+									},
+									{
+										"updated": "2020-11-11",
+										"confirmed_change": 248
+									},
+									{
+										"updated": "2020-11-12",
+										"confirmed_change": 230
+									},
+									{
+										"updated": "2020-11-13",
+										"confirmed_change": 211
+									},
+									{
+										"updated": "2020-11-14",
+										"confirmed_change": 176
+									},
+									{
+										"updated": "2020-11-15",
+										"confirmed_change": 389
+									},
+									{
+										"updated": "2020-11-16",
+										"confirmed_change": 389
+									},
+									{
+										"updated": "2020-11-17",
+										"confirmed_change": 371
+									},
+									{
+										"updated": "2020-11-18",
+										"confirmed_change": 478
+									},
+									{
+										"updated": "2020-11-19",
+										"confirmed_change": 363
+									},
+									{
+										"updated": "2020-11-20",
+										"confirmed_change": 345
+									},
+									{
+										"updated": "2020-11-21",
+										"confirmed_change": 287
+									},
+									{
+										"updated": "2020-11-22",
+										"confirmed_change": 486
+									},
+									{
+										"updated": "2020-11-23",
+										"confirmed_change": 441
+									},
+									{
+										"updated": "2020-11-24",
+										"confirmed_change": 640
+									},
+									{
+										"updated": "2020-11-25",
+										"confirmed_change": 509
+									},
+									{
+										"updated": "2020-11-26",
+										"confirmed_change": 470
+									},
+									{
+										"updated": "2020-11-27",
+										"confirmed_change": 283
+									},
+									{
+										"updated": "2020-11-28",
+										"confirmed_change": 286
+									},
+									{
+										"updated": "2020-11-29",
+										"confirmed_change": 545
+									},
+									{
+										"updated": "2020-11-30",
+										"confirmed_change": 393
+									},
+									{
+										"updated": "2020-12-01",
+										"confirmed_change": 489
+									},
+									{
+										"updated": "2020-12-02",
+										"confirmed_change": 417
+									},
+									{
+										"updated": "2020-12-03",
+										"confirmed_change": 674
+									},
+									{
+										"updated": "2020-12-04",
+										"confirmed_change": 262
+									},
+									{
+										"updated": "2020-12-05",
+										"confirmed_change": 289
+									},
+									{
+										"updated": "2020-12-06",
+										"confirmed_change": 592
+									},
+									{
+										"updated": "2020-12-07",
+										"confirmed_change": 448
+									},
+									{
+										"updated": "2020-12-08",
+										"confirmed_change": 457
+									},
+									{
+										"updated": "2020-12-09",
+										"confirmed_change": 419
+									},
+									{
+										"updated": "2020-12-10",
+										"confirmed_change": 453
+									},
+									{
+										"updated": "2020-12-11",
+										"confirmed_change": 243
+									},
+									{
+										"updated": "2020-12-12",
+										"confirmed_change": 278
+									},
+									{
+										"updated": "2020-12-13",
+										"confirmed_change": 457
+									},
+									{
+										"updated": "2020-12-14",
+										"confirmed_change": 350
+									},
+									{
+										"updated": "2020-12-15",
+										"confirmed_change": 357
+									},
+									{
+										"updated": "2020-12-16",
+										"confirmed_change": 321
+									},
+									{
+										"updated": "2020-12-17",
+										"confirmed_change": 400
+									},
+									{
+										"updated": "2020-12-18",
+										"confirmed_change": 188
+									},
+									{
+										"updated": "2020-12-19",
+										"confirmed_change": 242
+									},
+									{
+										"updated": "2020-12-20",
+										"confirmed_change": 367
+									},
+									{
+										"updated": "2020-12-21",
+										"confirmed_change": 324
+									},
+									{
+										"updated": "2020-12-22",
+										"confirmed_change": 270
+									},
+									{
+										"updated": "2020-12-23",
+										"confirmed_change": 169
+									},
+									{
+										"updated": "2020-12-24",
+										"confirmed_change": 155
+									},
+									{
+										"updated": "2020-12-25",
+										"confirmed_change": 185
+									},
+									{
+										"updated": "2020-12-26",
+										"confirmed_change": 189
+									},
+									{
+										"updated": "2020-12-27",
+										"confirmed_change": 429
+									},
+									{
+										"updated": "2020-12-28",
+										"confirmed_change": 301
+									},
+									{
+										"updated": "2020-12-29",
+										"confirmed_change": 283
+									},
+									{
+										"updated": "2020-12-30",
+										"confirmed_change": 267
+									},
+									{
+										"updated": "2020-12-31",
+										"confirmed_change": 137
+									},
+									{
+										"updated": "2021-01-01",
+										"confirmed_change": 204
+									},
+									{
+										"updated": "2021-01-02",
+										"confirmed_change": 157
+									},
+									{
+										"updated": "2021-01-03",
+										"confirmed_change": 401
+									},
+									{
+										"updated": "2021-01-04",
+										"confirmed_change": 259
+									},
+									{
+										"updated": "2021-01-05",
+										"confirmed_change": 203
+									},
+									{
+										"updated": "2021-01-06",
+										"confirmed_change": 342
+									},
+									{
+										"updated": "2021-01-07",
+										"confirmed_change": 249
+									},
+									{
+										"updated": "2021-01-08",
+										"confirmed_change": 189
+									},
+									{
+										"updated": "2021-01-09",
+										"confirmed_change": 188
+									},
+									{
+										"updated": "2021-01-10",
+										"confirmed_change": 389
+									},
+									{
+										"updated": "2021-01-11",
+										"confirmed_change": 230
+									},
+									{
+										"updated": "2021-01-12",
+										"confirmed_change": 254
+									},
+									{
+										"updated": "2021-01-13",
+										"confirmed_change": 244
+									},
+									{
+										"updated": "2021-01-14",
+										"confirmed_change": 256
+									},
+									{
+										"updated": "2021-01-15",
+										"confirmed_change": 189
+									},
+									{
+										"updated": "2021-01-16",
+										"confirmed_change": 205
+									},
+									{
+										"updated": "2021-01-17",
+										"confirmed_change": 442
+									},
+									{
+										"updated": "2021-01-18",
+										"confirmed_change": 344
+									},
+									{
+										"updated": "2021-01-19",
+										"confirmed_change": 385
+									},
+									{
+										"updated": "2021-01-20",
+										"confirmed_change": 364
+									},
+									{
+										"updated": "2021-01-21",
+										"confirmed_change": 366
+									},
+									{
+										"updated": "2021-01-22",
+										"confirmed_change": 173
+									},
+									{
+										"updated": "2021-01-23",
+										"confirmed_change": 245
+									},
+									{
+										"updated": "2021-01-24",
+										"confirmed_change": 604
+									},
+									{
+										"updated": "2021-01-25",
+										"confirmed_change": 399
+									},
+									{
+										"updated": "2021-01-26",
+										"confirmed_change": 384
+									},
+									{
+										"updated": "2021-01-27",
+										"confirmed_change": 429
+									},
+									{
+										"updated": "2021-01-28",
+										"confirmed_change": 373
+									},
+									{
+										"updated": "2021-01-29",
+										"confirmed_change": 255
+									},
+									{
+										"updated": "2021-01-30",
+										"confirmed_change": 302
+									},
+									{
+										"updated": "2021-01-31",
+										"confirmed_change": 479
+									},
+									{
+										"updated": "2021-02-01",
+										"confirmed_change": 408
+									},
+									{
+										"updated": "2021-02-02",
+										"confirmed_change": 423
+									},
+									{
+										"updated": "2021-02-03",
+										"confirmed_change": 327
+									},
+									{
+										"updated": "2021-02-04",
+										"confirmed_change": 359
+									},
+									{
+										"updated": "2021-02-05",
+										"confirmed_change": 264
+									},
+									{
+										"updated": "2021-02-06",
+										"confirmed_change": 300
+									},
+									{
+										"updated": "2021-02-07",
+										"confirmed_change": 461
+									},
+									{
+										"updated": "2021-02-08",
+										"confirmed_change": 372
+									},
+									{
+										"updated": "2021-02-09",
+										"confirmed_change": 392
+									},
+									{
+										"updated": "2021-02-10",
+										"confirmed_change": 334
+									},
+									{
+										"updated": "2021-02-11",
+										"confirmed_change": 418
+									},
+									{
+										"updated": "2021-02-12",
+										"confirmed_change": 298
+									},
+									{
+										"updated": "2021-02-13",
+										"confirmed_change": 264
+									},
+									{
+										"updated": "2021-02-14",
+										"confirmed_change": 604
+									},
+									{
+										"updated": "2021-02-15",
+										"confirmed_change": 506
+									},
+									{
+										"updated": "2021-02-16",
+										"confirmed_change": 525
+									},
+									{
+										"updated": "2021-02-17",
+										"confirmed_change": 591
+									},
+									{
+										"updated": "2021-02-18",
+										"confirmed_change": 600
+									},
+									{
+										"updated": "2021-02-19",
+										"confirmed_change": 307
+									},
+									{
+										"updated": "2021-02-20",
+										"confirmed_change": 386
+									},
+									{
+										"updated": "2021-02-21",
+										"confirmed_change": 618
+									},
+									{
+										"updated": "2021-02-22",
+										"confirmed_change": 604
+									},
+									{
+										"updated": "2021-02-23",
+										"confirmed_change": 595
+									},
+									{
+										"updated": "2021-02-24",
+										"confirmed_change": 615
+									},
+									{
+										"updated": "2021-02-25",
+										"confirmed_change": 705
+									},
+									{
+										"updated": "2021-02-26",
+										"confirmed_change": 408
+									},
+									{
+										"updated": "2021-02-27",
+										"confirmed_change": 446
+									},
+									{
+										"updated": "2021-02-28",
+										"confirmed_change": 865
+									},
+									{
+										"updated": "2021-03-01",
+										"confirmed_change": 740
+									},
+									{
+										"updated": "2021-03-02",
+										"confirmed_change": 723
+									},
+									{
+										"updated": "2021-03-03",
+										"confirmed_change": 673
+									},
+									{
+										"updated": "2021-03-04",
+										"confirmed_change": 596
+									},
+									{
+										"updated": "2021-03-05",
+										"confirmed_change": 440
+									},
+									{
+										"updated": "2021-03-06",
+										"confirmed_change": 399
+									},
+									{
+										"updated": "2021-03-07",
+										"confirmed_change": 827
+									},
+									{
+										"updated": "2021-03-08",
+										"confirmed_change": 741
+									},
+									{
+										"updated": "2021-03-09",
+										"confirmed_change": 776
+									},
+									{
+										"updated": "2021-03-10",
+										"confirmed_change": 762
+									},
+									{
+										"updated": "2021-03-11",
+										"confirmed_change": 774
+									},
+									{
+										"updated": "2021-03-12",
+										"confirmed_change": 499
+									},
+									{
+										"updated": "2021-03-13",
+										"confirmed_change": 521
+									},
+									{
+										"updated": "2021-03-14",
+										"confirmed_change": 888
+									},
+									{
+										"updated": "2021-03-15",
+										"confirmed_change": 748
+									},
+									{
+										"updated": "2021-03-16",
+										"confirmed_change": 711
+									},
+									{
+										"updated": "2021-03-17",
+										"confirmed_change": 84
+									},
+									{
+										"updated": "2021-03-18",
+										"confirmed_change": 85
+									},
+									{
+										"updated": "2021-03-19",
+										"confirmed_change": 856
+									},
+									{
+										"updated": "2021-03-20",
+										"confirmed_change": 520
+									},
+									{
+										"updated": "2021-03-21",
+										"confirmed_change": 430
+									},
+									{
+										"updated": "2021-03-22",
+										"confirmed_change": 213
+									},
+									{
+										"updated": "2021-03-23",
+										"confirmed_change": 213
+									},
+									{
+										"updated": "2021-03-24",
+										"confirmed_change": 214
+									},
+									{
+										"updated": "2021-03-25",
+										"confirmed_change": 742
+									},
+									{
+										"updated": "2021-03-30",
+										"confirmed_change": 1254
+									},
+									{
+										"updated": "2021-03-31",
+										"confirmed_change": 1255
+									},
+									{
+										"updated": "2021-04-01",
+										"confirmed_change": 360
+									},
+									{
+										"updated": "2021-04-02",
+										"confirmed_change": 341
+									},
+									{
+										"updated": "2021-04-03",
+										"confirmed_change": 327
+									},
+									{
+										"updated": "2021-04-04",
+										"confirmed_change": 363
+									},
+									{
+										"updated": "2021-04-05",
+										"confirmed_change": 535
+									},
+									{
+										"updated": "2021-04-06",
+										"confirmed_change": 403
+									},
+									{
+										"updated": "2021-04-07",
+										"confirmed_change": 399
+									},
+									{
+										"updated": "2021-04-08",
+										"confirmed_change": 367
+									},
+									{
+										"updated": "2021-04-09",
+										"confirmed_change": 249
+									},
+									{
+										"updated": "2021-04-10",
+										"confirmed_change": 237
+									},
+									{
+										"updated": "2021-04-11",
+										"confirmed_change": 408
+									},
+									{
+										"updated": "2021-04-12",
+										"confirmed_change": 326
+									},
+									{
+										"updated": "2021-04-13",
+										"confirmed_change": 323
+									},
+									{
+										"updated": "2021-04-14",
+										"confirmed_change": 300
+									},
+									{
+										"updated": "2021-04-15",
+										"confirmed_change": 264
+									},
+									{
+										"updated": "2021-04-16",
+										"confirmed_change": 173
+									},
+									{
+										"updated": "2021-04-17",
+										"confirmed_change": 161
+									},
+									{
+										"updated": "2021-04-18",
+										"confirmed_change": 282
+									},
+									{
+										"updated": "2021-04-19",
+										"confirmed_change": 290
+									},
+									{
+										"updated": "2021-04-20",
+										"confirmed_change": 217
+									},
+									{
+										"updated": "2021-04-21",
+										"confirmed_change": 279
+									},
+									{
+										"updated": "2021-04-22",
+										"confirmed_change": 269
+									},
+									{
+										"updated": "2021-04-23",
+										"confirmed_change": 158
+									},
+									{
+										"updated": "2021-04-24",
+										"confirmed_change": 141
+									},
+									{
+										"updated": "2021-04-25",
+										"confirmed_change": 241
+									},
+									{
+										"updated": "2021-04-26",
+										"confirmed_change": 230
+									},
+									{
+										"updated": "2021-04-27",
+										"confirmed_change": 250
+									},
+									{
+										"updated": "2021-04-28",
+										"confirmed_change": 213
+									},
+									{
+										"updated": "2021-04-29",
+										"confirmed_change": 218
+									},
+									{
+										"updated": "2021-04-30",
+										"confirmed_change": 107
+									},
+									{
+										"updated": "2021-05-01",
+										"confirmed_change": 139
+									},
+									{
+										"updated": "2021-05-02",
+										"confirmed_change": 319
+									},
+									{
+										"updated": "2021-05-03",
+										"confirmed_change": 85
+									},
+									{
+										"updated": "2021-05-04",
+										"confirmed_change": 85
+									},
+									{
+										"updated": "2021-05-05",
+										"confirmed_change": 85
+									},
+									{
+										"updated": "2021-05-06",
+										"confirmed_change": 254
+									},
+									{
+										"updated": "2021-05-07",
+										"confirmed_change": 0
+									}
+								],
+								"schema": {
+									"updated": "date",
+									"confirmed_change": "int"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"updated"
+									],
+									"seriesFieldKeys": [
+										"confirmed_change"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"7112a836-ba44-4b80-8036-0b934108cdf0": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"country_region": "Afghanistan"
+									},
+									{
+										"country_region": "Albania"
+									},
+									{
+										"country_region": "Algeria"
+									},
+									{
+										"country_region": "American Samoa"
+									}
+								],
+								"schema": {
+									"country_region": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"country_region"
+									],
+									"seriesFieldKeys": [
+										"country_region"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/d9428a1e-7208-45d1-8944-5b62c362f4f6/resourceGroups/ArtoAdfTest/providers/Microsoft.Synapse/workspaces/arto-synapse-ws/bigDataPools/ArtoSpark",
+				"name": "ArtoSpark",
+				"type": "Spark",
+				"endpoint": "https://arto-synapse-ws.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/ArtoSpark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\n",
+					"blob_account_name = \"pandemicdatalake\"\n",
+					"blob_container_name = \"public\"\n",
+					"blob_relative_path = \"curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet\"\n",
+					"blob_sas_token = r\"\"\n",
+					"# Allow SPARK to read from Blob remotely\n",
+					"wasbs_path = 'wasbs://%s@%s.blob.core.windows.net/%s' % (blob_container_name, blob_account_name, blob_relative_path)\n",
+					"\n",
+					"spark.conf.set(\n",
+					"    'fs.azure.sas.%s.%s.blob.core.windows.net' % (blob_container_name, blob_account_name),\n",
+					"    blob_sas_token)\n",
+					"df = spark.read.parquet(wasbs_path)\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"df.dtypes"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"from pyspark.sql import functions as f\r\n",
+					"df.select(f.countDistinct(\"country_region\")).show(truncate=False)\r\n",
+					"df.select(\"country_region\").distinct().collect()\r\n",
+					"display(df.filter(df.country_region==\"Sweden\").select(\"updated\", \"confirmed\"))\r\n",
+					"df.filter(df.country_region==\"Sweden\").select(f.max(\"updated\"), f.max(\"deaths\")).show()\r\n",
+					"df.where(df.updated=='2021-05-07').select(f.count(\"id\")).show()\r\n",
+					"display(df.select(\"country_region\").distinct().orderBy(df.country_region.asc()))"
+				],
+				"attachments": null,
+				"execution_count": 46
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"display(df.filter(df.country_region==\"Finland\").select(\"updated\",\"confirmed_change\"))"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"df.createOrReplaceTempView(\"cov\")\r\n",
+					"display((spark.sql(\"select distinct country_region from cov order by country_region limit 4\")))"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"from pyspark.sql.functions import udf\r\n",
+					"from pyspark.sql.types import StringType\r\n",
+					"def getThree(str):\r\n",
+					"    return str[0:3]\r\n",
+					"\r\n",
+					"threeUdf = udf(lambda x: getThree(x), StringType())\r\n",
+					"\r\n",
+					"df.select(threeUdf(df.country_region)).show()\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"display(df.filter(df.iso2==\"AD\").select(f.date_format(\"load_time\", \"yyyy-MM-dd\").alias(\"load_date\")).show(5))"
+				],
+				"attachments": null,
+				"execution_count": 27
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"\r\n",
+					"#display(df.groupBy(\"country_region\").agg((f.avg(\"deaths\")/f.avg(\"confirmed\")).alias(\"dt\")))\r\n",
+					"display(spark.sql(\"select country_region, round((avg(deaths)/avg(confirmed)), 4) as dt from cov group by country_region  having dt > 0.07 order by dt desc\"))"
+				],
+				"attachments": null,
+				"execution_count": 48
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(spark.sql(\"select cast(load_time as date) from cov limit 4\"))"
+				],
+				"attachments": null,
+				"execution_count": 49
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"countries = spark.sql(\"select distinct iso2, country_region from cov order by iso2 asc\")"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"#countries.createOrReplaceTempView(\"coco\")\r\n",
+					"#display(spark.sql(\"select cov.updated, coco.country_region from cov join coco on cov.iso2 = coco.iso2 limit 20\"))"
+				],
+				"attachments": null,
+				"execution_count": 17
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"from pyspark.sql.functions import expr\r\n",
+					"df.filter(df.country_region==\"Andorra\").select(expr(\"max(confirmed)\")).show()"
+				],
+				"attachments": null,
+				"execution_count": 59
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"#spark.sql(\"select confirmed_change, count(confirmed_change) over (order by updated) as cumul from cov where country_region = 'Finland' and updated > '2020-05-01' \").show()\r\n",
+					"#spark.sql(\"select row_number() over (order by updated) as rnum, confirmed_change  from cov where country_region = 'Finland' and updated > '2020-05-01' \").show()\r\n",
+					"#spark.sql(\"select updated, admin_region_1, admin_region_2, confirmed_change, sum(confirmed_change) over (partition by admin_region_1 order by updated) as state_sum  from cov where country_region = 'United States' and updated > '2020-04-01' \").show()\r\n",
+					"#spark.sql(\"select * from  (select country_region, updated, confirmed, rank() over (partition by country_region order by confirmed desc) as rank from cov where updated > '2021-01-01' and updated < '2021-03-04') where rank < 4 order by country_region desc, rank asc\").show()\r\n",
+					"spark.sql(\"with inner as (select country_region, updated, confirmed, rank() over (partition by country_region order by confirmed desc) as rank from cov where updated > '2021-01-01' and updated < '2021-03-04' \\\r\n",
+					"and country_region in ('United States', 'Brazil', 'India', 'United Kingdom') ) select * from inner where rank < 4 order by country_region desc, rank asc\").show()"
+				],
+				"attachments": null,
+				"execution_count": 50
+			}
+		]
+	}
+}

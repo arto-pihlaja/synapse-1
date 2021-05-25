@@ -1,0 +1,37 @@
+{
+	"name": "DestinationDataset_b3y",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "SoNum",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CreateDate",
+				"type": "date"
+			},
+			{
+				"name": "CreateUser",
+				"type": "varchar"
+			},
+			{
+				"name": "NetTotal",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MyTab"
+		},
+		"sqlPool": {
+			"referenceName": "ArtosSqlPool",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

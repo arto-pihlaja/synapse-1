@@ -1,0 +1,17 @@
+{
+	"name": "CreateHead",
+	"properties": {
+		"content": {
+			"query": "create table SoHeadMain (\n    SoNumber varchar(10) not null,\n    CreatedDate date,\n    CreatedBy varchar(16),\n    TotalValue decimal(12,2)\n)",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "ArtosSqlPool",
+				"databaseName": "ArtosSqlPool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

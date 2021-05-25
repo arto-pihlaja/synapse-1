@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sql--arto-synapse-ws",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/d9428a1e-7208-45d1-8944-5b62c362f4f6/resourceGroups/ArtoAdfTest/providers/Microsoft.Synapse/workspaces/arto-synapse-ws",
+		"groupId": "sql",
+		"fqdns": [
+			"arto-synapse-ws.548bfa9c-aca3-4b40-8f17-0749a92e5fb0.sql.azuresynapse.net"
+		]
+	}
+}

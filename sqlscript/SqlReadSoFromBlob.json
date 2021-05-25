@@ -1,0 +1,17 @@
+{
+	"name": "SqlReadSoFromBlob",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://artostorageforadf.blob.core.windows.net/adfblob/sapdata/SoHeader', \n\t\tFORMAT = 'PARQUET'\n    ) AS [result]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "SalesDwh"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SoLineSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TarentoS4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "VBAP"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

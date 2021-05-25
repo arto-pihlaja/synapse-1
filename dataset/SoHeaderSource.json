@@ -1,0 +1,16 @@
+{
+	"name": "SoHeaderSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TarentoS4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "VBAK"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

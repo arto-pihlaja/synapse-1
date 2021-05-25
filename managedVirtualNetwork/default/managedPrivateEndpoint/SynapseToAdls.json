@@ -1,0 +1,10 @@
+{
+	"name": "SynapseToAdls",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/d9428a1e-7208-45d1-8944-5b62c362f4f6/resourceGroups/ArtoAdfTest/providers/Microsoft.Storage/storageAccounts/artoadls",
+		"groupId": "dfs",
+		"fqdns": [
+			"artoadls.dfs.core.windows.net"
+		]
+	}
+}
