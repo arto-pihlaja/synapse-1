@@ -1,9 +1,9 @@
 {
-	"name": "SapDataTransform",
+	"name": "SapSoHeadKeyExtract",
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "SoHeadKeyToFile",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "SapDataTransformFlow",
+						"referenceName": "SapSoHeadToFile",
 						"type": "DataFlowReference"
 					},
 					"compute": {
