@@ -1,8 +1,8 @@
 {
-	"name": "SqlReadSoFromBlob",
+	"name": "SqlSelectSoKeysFromBlob",
 	"properties": {
 		"content": {
-			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://artostorageforadf.blob.core.windows.net/adfblob/sapdata/SoHeader', \n\t\tFORMAT = 'PARQUET'\n    ) AS [result]",
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://artoadls.blob.core.windows.net/artofs/sapdata/SoHeadKey.parquet', \n\t\tFORMAT = 'PARQUET'\n    ) AS [result]",
 			"metadata": {
 				"language": "sql"
 			},
