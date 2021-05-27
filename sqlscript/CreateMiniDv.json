@@ -2,7 +2,7 @@
 	"name": "CreateMiniDv",
 	"properties": {
 		"content": {
-			"query": "create table Hub_SalesOrder (\n    SoNumber varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumber));\ncreate table Hub_SalesOrderLine (\n    SoNumberLine varchar(20) not null,\n    SoNumber varchar(10) not null,\n    SoLine varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumberLine)\n);\nGO\n\n",
+			"query": "-- DROP TABLE IF EXISTS Hub_SalesOrder;\ncreate table Hub_SalesOrder (\n    SoNumber varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumber));\n\ncreate table Hub_SalesOrderLine (\n    SoNumberLine varchar(20) not null,\n    SoNumber varchar(10) not null,\n    SoLine varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumberLine)\n);\nGO\n\n",
 			"metadata": {
 				"language": "sql"
 			},
