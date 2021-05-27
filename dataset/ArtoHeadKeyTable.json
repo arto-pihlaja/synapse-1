@@ -9,21 +9,21 @@
 		"type": "AzureSqlDWTable",
 		"schema": [
 			{
-				"name": "SoNum",
+				"name": "SoNumber",
 				"type": "varchar"
 			},
 			{
-				"name": "CreateDate",
+				"name": "CreatedDate",
 				"type": "date"
 			},
 			{
-				"name": "CreateUser",
+				"name": "CreatedBy",
 				"type": "varchar"
 			},
 			{
-				"name": "NetTotal",
+				"name": "TotalValue",
 				"type": "decimal",
-				"precision": 10,
+				"precision": 12,
 				"scale": 2
 			}
 		],
