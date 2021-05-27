@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "HeadNum.parquet",
 				"folderPath": "sapdata",
 				"fileSystem": "artofs"
 			},
