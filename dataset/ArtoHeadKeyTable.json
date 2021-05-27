@@ -1,0 +1,35 @@
+{
+	"name": "ArtoHeadKeyTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArtoDedicatedSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "SoNum",
+				"type": "varchar"
+			},
+			{
+				"name": "CreateDate",
+				"type": "date"
+			},
+			{
+				"name": "CreateUser",
+				"type": "varchar"
+			},
+			{
+				"name": "NetTotal",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SoHeadMain"
+		}
+	}
+}
