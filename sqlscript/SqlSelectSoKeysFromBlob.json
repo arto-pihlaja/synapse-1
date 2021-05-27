@@ -2,7 +2,7 @@
 	"name": "SqlSelectSoKeysFromBlob",
 	"properties": {
 		"content": {
-			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://artoadls.blob.core.windows.net/artofs/sapdata/SoHeadKey.parquet', \n\t\tFORMAT = 'PARQUET'\n    ) AS [result]",
+			"query": "SELECT\n    TOP 100 vbeln, erdat, ERNAM\nFROM\n    OPENROWSET(\n        BULK 'https://artoadls.blob.core.windows.net/artofs/sapdata/vbak.parquet', \n\t\tFORMAT = 'PARQUET'\n    ) AS [result]",
 			"metadata": {
 				"language": "sql"
 			},
