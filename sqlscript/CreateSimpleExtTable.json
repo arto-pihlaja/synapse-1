@@ -1,5 +1,5 @@
 {
-	"name": "SQL script 1",
+	"name": "CreateSimpleExtTable",
 	"properties": {
 		"content": {
 			"query": "CREATE EXTERNAL TABLE [dbo].[SoHeadEt]\n(\n\t [SoNum] INT NOT NULL\n)\nWITH\n(\n\tLOCATION = 'https://artoadls.blob.core.windows.net/artofs/sapdata/vbak.parquet',\n\tDATA_SOURCE = [SapDataSource],\n\tFILE_FORMAT = [SapParquet]\n)\n",
