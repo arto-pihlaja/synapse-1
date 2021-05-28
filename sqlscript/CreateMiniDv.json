@@ -2,7 +2,7 @@
 	"name": "CreateMiniDv",
 	"properties": {
 		"content": {
-			"query": "-- DROP TABLE IF EXISTS Hub_SalesOrder;\ncreate table Hub_SalesOrder (\n    SoNumber varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumber));\n\ncreate table Hub_SalesOrderLine (\n    SoNumberLine varchar(20) not null,\n    SoNumber varchar(10) not null,\n    SoLine varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumberLine)\n);\nGO\n\n",
+			"query": "-- DROP TABLE IF EXISTS Hub_SalesOrder;\n\ncreate table Hub_SalesOrder (\n    SoNumber varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumber));\n\ncreate table Hub_SalesOrderLine (\n    SoNumberLine varchar(20) not null,\n    SoNumber varchar(10) not null,\n    SoLine varchar(10) not null,\n    Source varchar(10) not null,\n    LoadDate date not null\n)\nwith (CLUSTERED COLUMNSTORE INDEX,\nDISTRIBUTION = HASH(SoNumberLine)\n);\nGO\n\nalter table hub_salesorder\ndrop column LoadDate;\n\nalter table hub_salesorder\nadd LoadTime DATETIME not null;\n\nalter table Hub_SalesOrderLine\ndrop column LoadDate;\n\nalter table Hub_SalesOrderLine\nadd LoadTime DATETIME not null;\n",
 			"metadata": {
 				"language": "sql"
 			},
