@@ -1,0 +1,16 @@
+{
+	"name": "CustomerMainSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TarentoS4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "KNA1"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
