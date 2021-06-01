@@ -1,0 +1,45 @@
+{
+	"name": "Sat_Material",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArtoDedicatedSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Number",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadDate",
+				"type": "date"
+			},
+			{
+				"name": "Language",
+				"type": "char"
+			},
+			{
+				"name": "Description",
+				"type": "varchar"
+			},
+			{
+				"name": "MaterialType",
+				"type": "char"
+			},
+			{
+				"name": "MaterialGroup",
+				"type": "varchar"
+			},
+			{
+				"name": "UnitOfMeasure",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sat_Material"
+		}
+	}
+}
