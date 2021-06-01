@@ -1,0 +1,48 @@
+{
+	"name": "SatMaterial",
+	"properties": {
+		"folder": {
+			"name": "MiniDataVault"
+		},
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "Number",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadDate",
+				"type": "date"
+			},
+			{
+				"name": "Language",
+				"type": "char"
+			},
+			{
+				"name": "Description",
+				"type": "varchar"
+			},
+			{
+				"name": "MaterialType",
+				"type": "char"
+			},
+			{
+				"name": "MaterialGroup",
+				"type": "varchar"
+			},
+			{
+				"name": "UnitOfMeasure",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sat_Material"
+		},
+		"sqlPool": {
+			"referenceName": "ArtosSqlPool",
+			"type": "SqlPoolReference"
+		}
+	}
+}
