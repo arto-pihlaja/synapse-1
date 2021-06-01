@@ -1,0 +1,15 @@
+{
+	"name": "SourceDataset_c7f",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TarentoS4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "V_MARA_MAKT"
+		}
+	}
+}
