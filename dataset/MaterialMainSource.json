@@ -1,0 +1,16 @@
+{
+	"name": "MaterialMainSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TarentoS4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SapTableResource",
+		"schema": [],
+		"typeProperties": {
+			"tableName": "V_MARA_MAKT"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
