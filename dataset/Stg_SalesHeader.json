@@ -1,0 +1,349 @@
+{
+	"name": "Stg_SalesHeader",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "VBELN",
+				"type": "varchar"
+			},
+			{
+				"name": "ERDAT",
+				"type": "varchar"
+			},
+			{
+				"name": "ERZET",
+				"type": "varchar"
+			},
+			{
+				"name": "ERNAM",
+				"type": "varchar"
+			},
+			{
+				"name": "ANGDT",
+				"type": "varchar"
+			},
+			{
+				"name": "BNDDT",
+				"type": "varchar"
+			},
+			{
+				"name": "AUDAT",
+				"type": "varchar"
+			},
+			{
+				"name": "VBTYP",
+				"type": "varchar"
+			},
+			{
+				"name": "TRVOG",
+				"type": "varchar"
+			},
+			{
+				"name": "AUART",
+				"type": "varchar"
+			},
+			{
+				"name": "AUGRU",
+				"type": "varchar"
+			},
+			{
+				"name": "GWLDT",
+				"type": "varchar"
+			},
+			{
+				"name": "SUBMI",
+				"type": "varchar"
+			},
+			{
+				"name": "NETWR",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "WAERK",
+				"type": "varchar"
+			},
+			{
+				"name": "VKORG",
+				"type": "varchar"
+			},
+			{
+				"name": "VTWEG",
+				"type": "varchar"
+			},
+			{
+				"name": "SPART",
+				"type": "varchar"
+			},
+			{
+				"name": "VKGRP",
+				"type": "varchar"
+			},
+			{
+				"name": "GSKST",
+				"type": "varchar"
+			},
+			{
+				"name": "GUEBG",
+				"type": "varchar"
+			},
+			{
+				"name": "GUEEN",
+				"type": "varchar"
+			},
+			{
+				"name": "KNUMV",
+				"type": "varchar"
+			},
+			{
+				"name": "VDATU",
+				"type": "varchar"
+			},
+			{
+				"name": "VPRGR",
+				"type": "varchar"
+			},
+			{
+				"name": "AUTLF",
+				"type": "varchar"
+			},
+			{
+				"name": "VBKLA",
+				"type": "varchar"
+			},
+			{
+				"name": "VBKLT",
+				"type": "varchar"
+			},
+			{
+				"name": "KALSM",
+				"type": "varchar"
+			},
+			{
+				"name": "VSBED",
+				"type": "varchar"
+			},
+			{
+				"name": "FKARA",
+				"type": "varchar"
+			},
+			{
+				"name": "AWAHR",
+				"type": "varchar"
+			},
+			{
+				"name": "KTEXT",
+				"type": "varchar"
+			},
+			{
+				"name": "BSTNK",
+				"type": "varchar"
+			},
+			{
+				"name": "BSARK",
+				"type": "varchar"
+			},
+			{
+				"name": "BSTDK",
+				"type": "varchar"
+			},
+			{
+				"name": "BSTZD",
+				"type": "varchar"
+			},
+			{
+				"name": "IHREZ",
+				"type": "varchar"
+			},
+			{
+				"name": "BNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "TELF1",
+				"type": "varchar"
+			},
+			{
+				"name": "MAHZA",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "KUNNR",
+				"type": "varchar"
+			},
+			{
+				"name": "KOSTL",
+				"type": "varchar"
+			},
+			{
+				"name": "STAFO",
+				"type": "varchar"
+			},
+			{
+				"name": "STWAE",
+				"type": "varchar"
+			},
+			{
+				"name": "AEDAT",
+				"type": "varchar"
+			},
+			{
+				"name": "KNUMA",
+				"type": "varchar"
+			},
+			{
+				"name": "PS_PSP_PNR",
+				"type": "varchar"
+			},
+			{
+				"name": "KURST",
+				"type": "varchar"
+			},
+			{
+				"name": "KKBER",
+				"type": "varchar"
+			},
+			{
+				"name": "KNKLI",
+				"type": "varchar"
+			},
+			{
+				"name": "VGBEL",
+				"type": "varchar"
+			},
+			{
+				"name": "OBJNR",
+				"type": "varchar"
+			},
+			{
+				"name": "TAXK1",
+				"type": "varchar"
+			},
+			{
+				"name": "XBLNR",
+				"type": "varchar"
+			},
+			{
+				"name": "ZUONR",
+				"type": "varchar"
+			},
+			{
+				"name": "VGTYP",
+				"type": "varchar"
+			},
+			{
+				"name": "KALSM_CH",
+				"type": "varchar"
+			},
+			{
+				"name": "AGRZR",
+				"type": "varchar"
+			},
+			{
+				"name": "AUFNR",
+				"type": "varchar"
+			},
+			{
+				"name": "QMNUM",
+				"type": "varchar"
+			},
+			{
+				"name": "ABSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "BESTK",
+				"type": "varchar"
+			},
+			{
+				"name": "CMPSC",
+				"type": "varchar"
+			},
+			{
+				"name": "CMPSD",
+				"type": "varchar"
+			},
+			{
+				"name": "CMPSI",
+				"type": "varchar"
+			},
+			{
+				"name": "CMPSJ",
+				"type": "varchar"
+			},
+			{
+				"name": "CMPSK",
+				"type": "varchar"
+			},
+			{
+				"name": "DCSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "FKSAK",
+				"type": "varchar"
+			},
+			{
+				"name": "FMSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "FSSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "GBSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "LFGSK",
+				"type": "varchar"
+			},
+			{
+				"name": "LFSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "LSSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "MANEK",
+				"type": "varchar"
+			},
+			{
+				"name": "RFGSK",
+				"type": "varchar"
+			},
+			{
+				"name": "RFSTK",
+				"type": "varchar"
+			},
+			{
+				"name": "SPSTG",
+				"type": "varchar"
+			},
+			{
+				"name": "TRSTA",
+				"type": "varchar"
+			},
+			{
+				"name": "WBSTK",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Stg_SalesVbak"
+		},
+		"sqlPool": {
+			"referenceName": "ArtosSqlPool",
+			"type": "SqlPoolReference"
+		}
+	}
+}
