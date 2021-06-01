@@ -1,5 +1,5 @@
 {
-	"name": "SourceDataset_c7f",
+	"name": "SapMaraTable",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TarentoS4",
