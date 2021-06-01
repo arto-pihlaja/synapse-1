@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_c7f",
+	"name": "SapMaterialParquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ArtoAdls",
