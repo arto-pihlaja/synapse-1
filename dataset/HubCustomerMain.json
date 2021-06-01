@@ -1,0 +1,32 @@
+{
+	"name": "HubCustomerMain",
+	"properties": {
+		"folder": {
+			"name": "MiniDataVault"
+		},
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "Number",
+				"type": "varchar"
+			},
+			{
+				"name": "Source",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Hub_Customer"
+		},
+		"sqlPool": {
+			"referenceName": "ArtosSqlPool",
+			"type": "SqlPoolReference"
+		}
+	}
+}
