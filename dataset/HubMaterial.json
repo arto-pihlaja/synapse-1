@@ -1,0 +1,29 @@
+{
+	"name": "HubMaterial",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ArtoDedicatedSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Number",
+				"type": "varchar"
+			},
+			{
+				"name": "Source",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Hub_Material"
+		}
+	}
+}
