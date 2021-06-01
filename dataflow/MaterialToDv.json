@@ -22,9 +22,12 @@
 				},
 				{
 					"name": "EnglishLanguage"
+				},
+				{
+					"name": "AddedSource"
 				}
 			],
-			"script": "source(output(\n\t\tMANDT as string,\n\t\tMATNR as string,\n\t\tSPRAS as string,\n\t\tERNAM as string,\n\t\tLAEDA as string,\n\t\tMTART as string,\n\t\tMATKL as string,\n\t\tMEINS as string,\n\t\tBEGRU as string,\n\t\tMAKTX as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> RawSapMaterialData\nRawSapMaterialData select(mapColumn(\n\t\tNumber = MATNR,\n\t\tChangeDate = LAEDA\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectForHub\nRawSapMaterialData select(mapColumn(\n\t\tNumber = MATNR,\n\t\tLanguage = SPRAS,\n\t\tCreatedBy = ERNAM,\n\t\tChangeDate = LAEDA,\n\t\tMaterialType = MTART,\n\t\tMaterialClass = MATKL,\n\t\tUnitOfMeasure = MEINS,\n\t\tDescription = MAKTX\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectForSatellite\nSelectForSatellite filter(Language == 'E') ~> EnglishLanguage"
+			"script": "source(output(\n\t\tMANDT as string,\n\t\tMATNR as string,\n\t\tSPRAS as string,\n\t\tERNAM as string,\n\t\tLAEDA as string,\n\t\tMTART as string,\n\t\tMATKL as string,\n\t\tMEINS as string,\n\t\tBEGRU as string,\n\t\tMAKTX as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> RawSapMaterialData\nRawSapMaterialData select(mapColumn(\n\t\tNumber = MATNR,\n\t\tChangeDate = LAEDA\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectForHub\nRawSapMaterialData select(mapColumn(\n\t\tNumber = MATNR,\n\t\tLanguage = SPRAS,\n\t\tCreatedBy = ERNAM,\n\t\tChangeDate = LAEDA,\n\t\tMaterialType = MTART,\n\t\tMaterialClass = MATKL,\n\t\tUnitOfMeasure = MEINS,\n\t\tDescription = MAKTX\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectForSatellite\nSelectForSatellite filter(Language == 'E') ~> EnglishLanguage\nSelectForHub derive(Source = 'SAP') ~> AddedSource"
 		}
 	}
 }
